@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-      h1 {text-align: center;}
+
       body {
-        background-image: url('Triangle Background Finalized Pinkish.jpg');
+        background-image: url('Triangle-Background-Finalized-Pinkish.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -13,9 +14,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 200px; 
+        height: auto; 
+        width: auto;
       }
- .button {
+      
+      h1 {
+        text-align: center;
+      }
+      .button {
         border: none;
         color: black;
         padding: 16px 32px;
@@ -61,22 +67,81 @@
         color: white;
       }
 
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #ddd;
+      }
+
+      .topnav a {
+        float: left;
+        color: #17041e;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #730a42;
+        color: white;
+      }
+
+      .topnav a.active {
+        background-color: #4b0a4a;
+        color: white;
+      }
+      
+      div.parent {
+        position: relative;
+        height: 200px;
+      }
+
+      div.fixed {
+        position: fixed;
+        width: 20%;
+        bottom: 10px;
+        left: 20px;
+        padding-right: 10px;
+      } 
+      
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto; 
+        width: auto;
+      }
+      
     </style>
-  </head>
-  <body>
-   <div class="center">
-    <button class="button HOME" onclick="document.location = 'index.html'">
-      Home
-    </button>
-    </div class>
-    <br>
-    <h1 style="color:white"> Current Projects </h1>
-    <dl>
-      <dt style="color:white"><b> If only today </b></dt>
-      <dd style="color:white"> A point and click survival horror game, where you go around a property from the 2000's looking for a way to get out. No cheep, or loud jumpscares, but a good amount of suspense and spooks. </dd>
-      <br>
-      <dt style="color:white"><b> *Name not yet decided* </b></dt>
-      <dd style="color:white"> A simple platformer set in an old building you're trying to escape from. Falling objects, wrong paths and enemies block your way, but you wont let a few small things stop you!
-    </dl>
-  </body>
-</html>
+    <body>
+      <div class="topnav">
+        <a href="#home">Home</a>
+        <a href="#news" onclick="">RainDrop Studios</a>
+        <a class="active" href="#contact" onclick="">FireWorld Interactive</a>
+        <a href="#about" onclick="">About</a>
+      </div>
+      
+      <h1 style="color:white" > Current Projects </h1>
+      <dl>
+        <dt style="color:white"><b> If only today </b></dt>
+        <dd style="color:white"> A point and click survival horror game, where you go around a property from the 2000's looking for a way to get out. No cheep, or loud jumpscares, but a good amount of suspense and spooks. </dd>
+        <br>
+        <dt style="color:white"><b> *Name not yet decided* </b></dt>
+        <dd style="color:white"> A simple platformer set in an old building you're trying to escape from. Falling objects, wrong paths and enemies block your way, but you wont let a few small things stop you!
+      </dl>
+      
+      <div class="fixed">
+        <a href="https://www.patreon.com/frogzrule">
+          <img border="0" alt="Patreon" src="pateron.png" width="40" height="40">
+          <img border="0" src="Spaceimage.png" width="10" height="10">
+        <a href="https://discord.gg/Xr4tc7k">
+          <img border="0" alt="Discord" src="discord.png" width="40" height="40">
+      </div>
+          
+    </body>
+    </html>
