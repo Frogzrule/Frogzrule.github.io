@@ -1,11 +1,11 @@
-.ht<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-      h1 {text-align: center;}
-      h3 {text-align: center;}
-     body {
-        background-image: url('Triangle Background Finalized Pinkish.jpg');
+
+      body {
+        background-image: url('Triangle-Background-Finalized-Pinkish.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -14,7 +14,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 200px; 
+        height: auto; 
+        width: auto;
+      }
+      
+      h1 {
+        text-align: center;
       }
       .button {
         border: none;
@@ -55,7 +60,6 @@
         background-color: #3d0a45;
         color: black;
         border: 2px solid #16041c;
-        
       }
 
       .HOME:hover {
@@ -63,16 +67,74 @@
         color: white;
       }
 
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #ddd;
+      }
+
+      .topnav a {
+        float: left;
+        color: #17041e;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a:hover {
+        background-color: #730a42;
+        color: white;
+      }
+
+      .topnav a.active {
+        background-color: #4b0a4a;
+        color: white;
+      }
+      
+      div.parent {
+        position: relative;
+        height: 200px;
+      }
+
+      div.fixed {
+        position: fixed;
+        width: 20%;
+        bottom: 10px;
+        left: 20px;
+        padding-right: 10px;
+      } 
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto; 
+        width: auto;
+      }
       
     </style>
-  </head>
-  <body>
-  <div class="center">
-    <button class="button HOME" onclick="document.location = 'index.html'">
-      Home
-    </button>
-  </div class>
-    <h1 style="color:white"> Current Projects </h1>
-    <h3 style="color:white"> None </h3>
-  </body>
-</html>
+    <body>
+      <div class="topnav">
+        <a href="#home">Home</a>
+        <a class="active" href="#news" onclick="">RainDrop Studios</a>
+        <a href="#contact" onclick="">FireWorld Interactive</a>
+        <a href="#about" onclick="">About</a>
+      </div>
+      
+      <h1 style="color:white"> Current Projects </h1>
+      <h3 style="color:white"> None </h3>
+      
+      <div class="fixed">
+        <a href="https://www.patreon.com/frogzrule">
+          <img border="0" alt="Patreon" src="pateron.png" width="40" height="40">
+          <img border="0" src="Spaceimage.png" width="10" height="10">
+        <a href="https://discord.gg/Xr4tc7k">
+            <img border="0" alt="Discord" src="discord.png" width="40" height="40">
+      </div>
+          
+    </body>
+    </html>
