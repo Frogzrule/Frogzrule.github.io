@@ -112,3 +112,34 @@ h2 {
 p {
   color: white;
 }
+
+.buttonfrog {
+  background-color: #77f7aa;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #77f7aa;
+}
+
+.button1:hover {
+  background-color: #77f7aa;
+  color: white;
+}
+
+.rightfloat {
+  float: right;
+  height: 300px;
+  width: 300px;
+}
