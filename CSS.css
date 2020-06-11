@@ -1,9 +1,12 @@
+<! tHIS IS FOR BKGRD DONT TUCH>
 body {
   background-image: url('Triangle Background Finalized Pinkish.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
+
+<! CENTEREING THISNFDS ANFD TEXT STUFF>
 .center {
   display: flex;
   justify-content: center;
@@ -17,6 +20,7 @@ h1 {
   color: white;
 }
 
+<! rtHIS IS ALL FOR THE NAV BAR>
 .button {
   border: none;
   color: black;
@@ -105,6 +109,7 @@ div.fixed {
   padding-right: 10px;
 } 
 
+<! tESYT STYLEING AND CENTEREING BUT DOWN HERE>
 h2 {
   color: white;
 }
@@ -113,6 +118,7 @@ p {
   color: white;
 }
 
+<! tHIS IS FOR RTHE STUPID FROG>
 .buttonfrog {
   background-color: #77f7aa;
   border: none;
