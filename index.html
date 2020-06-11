@@ -3,6 +3,49 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
      <link rel="stylesheet" type="text/css" href="CSS.css">
+      <style>
+p {
+color: green;
+}
+        .buttonfrog {
+          background-color: #77f7aa;
+          border: none;
+          color: white;
+          padding: 16px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          transition-duration: 0.4s;
+          cursor: pointer;
+        }
+
+        .button1 {
+          background-color: white; 
+          color: black; 
+          border: 2px solid #77f7aa;
+        }
+
+        .button1:hover {
+          background-color: #77f7aa;
+          color: white;
+        }
+      </style>
+      <script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = " <p> You have fed your frog " + localStorage.clickcount.fontcolor("green") + " time(s). </p>";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+    </script>
   </head>
   <body>
     <div class="topnav">
@@ -13,6 +56,11 @@
     </div>
     <h1> Welcome weary traveler! </h1>
     <p style="color:white"> In the nav bar you can find the two studios that I have, and more about me, and at the bottom are my medias! </p>
+    <p> Heres a frog for your adventures </p>
+    <p>
+      <button onclick="clickCounter()" type="button" class="buttonfrog button1"> Feed your frog!</button>
+    </p>
+<div id="result"></div>
     
     <div class="fixed">
       <a href="https://www.patreon.com/frogzrule">
