@@ -39,14 +39,25 @@ color: green;
 <! tHIS IS ALSO FOT THAT STUPID FROG>
       <script>
 function clickCounter() {
-  if (typeof(Storage) !== "undefined") {
-    if (localStorage.clickcount) {
+  if (typeof(Storage) !== "undefined") 
+  {
+    if (localStorage.clickcount) 
+    {
       localStorage.clickcount = Number(localStorage.clickcount)+1;
-    } else {
+    } 
+    else 
+    {
       localStorage.clickcount = 1;
     }
     document.getElementById("result").innerHTML = " <p> You have fed your frog " + localStorage.clickcount.fontcolor("green") + " time(s). </p>";
-  } else {
+  } 
+    else if (localStorage.clickcount = 10)
+    {
+        document.getElementById("result").innerHTML = " <p> I think thats enough clicks..." + localStorage.clickcount.fontcolor("green") + " time(s). </p>"; 
+    }
+      
+  else 
+  {
     document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
   }
 }
