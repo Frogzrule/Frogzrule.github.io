@@ -51,7 +51,7 @@ function clickCounter() {
     }
     document.getElementById("result").innerHTML = " <p> You have fed your frog " + localStorage.clickcount.fontcolor("green") + " time(s). </p>";
   } 
-    else if (localStorage.clickcount = 10)
+    else if (localStorage.clickcount >= 10)
     {
         document.getElementById("result").innerHTML = " <p> I think thats enough clicks..." + localStorage.clickcount.fontcolor("green") + " time(s). </p>"; 
     }
